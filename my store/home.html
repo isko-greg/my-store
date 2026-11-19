@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css">
 
 </head>
-<body>
+<body class="body">
 
     <!-- Navigation -->
   <nav class="navbar md:navbar-expand bg-1 border-bottom">
@@ -51,98 +51,298 @@
   </div>
   </nav>
 
-  <!-- For all Content -->
+<!-- For all Content -->
 
-    <!-- CTA -->
-    <div class="card m-7 p-4">
-      <div>
+<!-- CTA Section -->
+<div class="container-fluid my-5">
+    <div class="cta-layout">
 
-          <!-- Image -->
-          <div class="col-md-6 rounded float-end">
-              <img src="./images/ctabird.png" 
-              alt="KalapaTEE holding the clothes of the shop." 
-              class="img-fluid">
-          </div>
+        <!-- Heading -->
+        <div class="cta-heading">
+            <h1 class="header-font text-5xl mt-4 text-center">
+                "From the Sky, <br> to your Bahay."
+            </h1>
+        </div>
 
-        <!-- Text -->
-          <div class="col-md-6 p-12">
-              <h1 class="text-5xl header-font">"From the Sky, <br> to your Bahay."</h1>
-              <h5 class="p-4 my-8 body-font">Inspired by the kalapati. Where every style combines with designs that brings comfort and creativity.</h5>
-          </div>
+        <!-- Image -->
+        <div class="cta-image mx-2 my-2">
+            <img src="./images/ctabird.png"
+                 alt="KalapaTEE holding the clothes of the shop."
+                 class="img-fluid">
+        </div>
 
-          <!-- Button -->
-          <div class="d-grid align-content-center px-12">
-          <button type="button" class=" btn-solid btn-styled btn-lg header-font">
-              Shop Now!
-          </button>
-          </div>
+        <!-- Description -->
+        <div class="cta-description">
+            <h5 class=" mx-8 body-font text-center">
+                Inspired by the kalapati. Where every style combines with designs that bring comfort and creativity.
+            </h5>
+        </div>
 
-      </div>
-
-    </div>
-
-   
-
-      <!-- About Me -->
-    <div class="card m-7 p-4" align-content-center>
-      
-
-
-      <!-- Left Column -->
-      <div class="col-md-6">
-
-      </div>
-
-      <!-- Middle Column -->
-      <div class="col-md-6">
-        <h3 class="header-font">Explore New Designs!</h3>
-      </div>
-
-      <!-- Right Column -->
-      <div class="col-md-6">
-        
-      </div>
+        <!-- Button -->
+        <div class="cta-button d-grid text-center  mx-4 my-4">
+            <button type="button" class="btn-solid btn-styled btn-lg header-font text-lg" style="background-color:#A9C980">
+                Shop Now!
+            </button>
+        </div>
 
     </div>
+</div>
 
+<!-- About Me -->
+<div class="container-fluid my-5">
 
-    <!-- Shop -->
-    <div class="card m-7 p-4">
-      <h3 class="header-font">Explore New Designs!</h3>
-      <h6 class="body-font">Fresh drops, best addition to your collection.</h6>
+    <div class="about-layout">
 
-      <div class="d-flex">
+        <!-- Left Column -->
+        <div class="about-image1 mx-2 my-2">
+            <img src="./images/Factory.png" class="img-fluid">
+        </div>
 
-        <!-- Do Good Work Tee -->
-        <div> 
-            <img src="./images/DoGoodWorkTee.png">
+        <!-- Middle Column -->
+        <div class="about-description mx-4">
+            <h3 class="text-5xl my-4 header-font text-center">
+                About Us!
+            </h3>
+
+            <h6 class="body-font my-4 mx-2 text-center">
+                KalapaTEE was created from the playful concept of a kalapati (pigeon) and the warmth and familiarity of a Filipino home. Inspired by everyday Filipino experiences, culture, and the realities faced by ordinary Filipinos, the brand uses creative shirt designs to express identity, freedom, hope, and social awareness.
+            </h6>
+
+            <div class="about-button d-flex justify-content-center my-4">
+                <button type="button" class="btn-solid btn-styled btn-lg header-font text-lg w-100" style="background-color:#A9C980">
+                    More about us here!
+                </button>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="about-image2 mx-2 my-2">
+            <img src="./images/ManWearingShirt.png" class="img-fluid">
+        </div>
+
+    </div>
+</div>
+
+<!-- Explore Section -->
+<div class="container-fluid my-5">
+    <div class="explore-layout m-3 p-4">
+
+        <h3 class="header-font fs-2 my-4">Explore New Designs!</h3>
+        <h6 class="body-font my-4 mx-2">
+            Fresh drops, best addition to your collection.
+        </h6>
+
+        <!-- Products -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <!-- Do Good Work Tee -->
+            <div class="col">
+                <div class="product-card h-100">
+                    <div class="product-image-wrap position-relative h-100"
+                         style="background-color:#EDC87B; border-radius:25px;">
+
+                        <img src="./images/DoGoodWorkTee.png"
+                             alt="Do Good Work Tee"
+                             class="product-image img-fluid">
+
+                        <div class="product-overlay position-absolute bottom-0 start-0 end-0 m-3">
+                            <div class="d-flex justify-content-between align-items-center gap-2">
+                                <h5 class="header-font fs-5 mb-0">
+                                    Do Good Work Tee
+                                </h5>
+                                <h5 class="header-font fs-5 mb-0 text-nowrap">
+                                    ₱499
+                                </h5>
+                            </div>
+
+                            <p class="body-font product-description">
+                                A simple statement for people who believe good work speaks for itself.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Don't Be Late Tee -->
+            <div class="col">
+                <div class="product-card h-100">
+                    <div class="product-image-wrap position-relative h-100"
+                         style="background-color:#AFCE8A; border-radius:25px;">
+
+                        <img src="./images/DontBeLateTee.png"
+                             alt="Don't Be Late Tee"
+                             class="product-image img-fluid">
+
+                        <div class="product-overlay position-absolute bottom-0 start-0 end-0 m-3">
+                            <div class="d-flex justify-content-between align-items-center gap-2">
+                                <h5 class="header-font fs-5 mb-0">
+                                    Don't Be Late Tee
+                                </h5>
+                                <h5 class="header-font fs-5 mb-0 text-nowrap">
+                                    ₱499
+                                </h5>
+                            </div>
+
+                            <p class="body-font product-description">
+                                A simple reminder to show up, get moving, and make the most of the day.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Everyday Comfort Tee -->
+            <div class="col">
+                <div class="product-card h-100">
+                    <div class="product-image-wrap position-relative h-100"
+                         style="background-color:#EDC87B; border-radius:25px;">
+
+                        <img src="./images/EverydayComfortTee.png"
+                             alt="Everyday Comfort Tee"
+                             class="product-image img-fluid">
+
+                        <div class="product-overlay position-absolute bottom-0 start-0 end-0 m-3">
+                            <div class="d-flex justify-content-between align-items-center gap-2">
+                                <h5 class="header-font fs-5 mb-0">
+                                    Everyday Comfort Tee
+                                </h5>
+                                <h5 class="header-font fs-5 mb-0 text-nowrap">
+                                    ₱499
+                                </h5>
+                            </div>
+
+                            <p class="body-font product-description">
+                                A plain, comfortable tee designed for everyday wear.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
         </div>
 
-        <!-- Don't Be Late Tee -->
-        <div> 
-            <img src="./images/DontBeLateTee.png">
+        <!-- Shop Button -->
+        <div class="d-flex justify-content-end mt-4">
+            <button type="button"
+                    class="btn btn-lg btn-solid btn-styled header-font"
+                    style="background-color:#A9C980">
+                Shop Now!
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<!-- Favorites Section -->
+<div class="container-fluid my-5">
+    <div class="explore-layout m-3 p-4">
+
+        <!-- Section Header -->
+        <h3 class="header-font fs-2 my-4">
+            Favorites Section
+        </h3>
+
+        <h6 class="body-font my-4 mx-2">
+            Featuring KalapaTee's comfy shirts that is best paired in different outfits.
+        </h6>
+
+        <!-- Favorite Products -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <!-- Don't Be Late Tee -->
+            <div class="col">
+                <div class="product-card h-100">
+
+                    <div class="product-image-wrap position-relative h-100"
+                         style="background-color:#AFCE8A; border-radius:25px;">
+
+                        <img src="./images/DontBeLateTee.png"
+                             alt="Don't Be Late Tee"
+                             class="product-image img-fluid">
+
+                        <div class="product-overlay position-absolute bottom-0 start-0 end-0 m-3">
+
+                            <div class="d-flex justify-content-between align-items-center gap-2">
+
+                                <h5 class="header-font fs-5 mb-0">
+                                    <button type="button"
+                                            class="heart-button"
+                                            onclick="removeFavorite(this)"
+                                            aria-label="Remove from favorites">
+                                        ♡
+                                    </button>
+                                    Don't Be Late Tee
+                                </h5>
+
+                                <h5 class="header-font fs-5 mb-0 text-nowrap">
+                                    ₱499
+                                </h5>
+
+                            </div>
+
+                            <p class="body-font product-description">
+                                A simple reminder to show up, get moving, and make the most of the day.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Everyday Comfort Tee -->
+            <div class="col">
+                <div class="product-card h-100">
+
+                    <div class="product-image-wrap position-relative h-100"
+                         style="background-color:#EDC87B; border-radius:25px;">
+
+                        <img src="./images/EverydayComfortTee.png"
+                             alt="Everyday Comfort Tee"
+                             class="product-image img-fluid">
+
+                        <div class="product-overlay position-absolute bottom-0 start-0 end-0 m-3">
+
+                            <div class="d-flex justify-content-between align-items-center gap-2">
+
+                                <h5 class="header-font fs-5 mb-0">
+                                    <button type="button" class="btn-icon border-0 p-0" aria-label="Heart">
+                                      <img src="./icon-img/heart-light.png" width="16" height="16" alt="Heart Icon">
+                                    </button>
+                                    Everyday Comfort Tee
+                                </h5>
+
+                                <h5 class="header-font fs-5 mb-0 text-nowrap">
+                                    ₱499
+                                </h5>
+
+                            </div>
+
+                            <p class="body-font product-description">
+                                A plain, comfortable tee designed for everyday wear.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
-        <!-- Everyday Comfort Tee -->
-        <div> 
-            <img src="./images/EverydayComfortTee.png">
-
+        <!-- Favorites Button -->
+        <div class="d-flex justify-content-end mt-4">
+            <button type="button"
+                    class="btn btn-lg btn-solid btn-styled header-font"
+                    style="background-color:#A9C980">
+                Go to Favorites!
+            </button>
         </div>
-      </div>
-
 
     </div>
+</div>
 
-      <!-- Favorites -->
-    <div class="card m-7 p-4" align-content-center>
-
-      <h3 class="header-font">Favorites Section</h3>
-
-      <h6 class="body-font">Featuring KalapaTee’s comfy shirts that is best paired in different outfits.</h6>
-
-    </div>
 
   <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
 </body>
