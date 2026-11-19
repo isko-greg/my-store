@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Batangas';
+    src: url('../font/batangas-bold-700.otf');
+}
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('../font/LibreBaskerville-VariableFont_wght.ttf');
+}
+
+
+.header-font {
+    font-family: 'Batangas';
+}
+
+.body-font {
+    font-family:'LibreBaskerville'
+}
+
+h5 {
+    line-height: 2;
+}
