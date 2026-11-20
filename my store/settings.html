@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KalapaTEE</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="settings.css">
     
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
 
@@ -13,7 +19,13 @@
 
     <div class="container">
 
-        <a class="navbar-brand" href="home.html">KalapaTEE</a>
+        <a class="navbar-brand" href="home.html">
+    <img 
+        src="images/kalapatee-logo.png" 
+        alt="KalapaTEE Logo" 
+        class="navbar-logo"
+    >
+        </a>
 
         <button class="btn-icon navbar-toggler" type="button"
             data-bs-toggle="drawer" data-bs-target="#mainNav"
@@ -37,16 +49,147 @@
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="home.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-          <li class="nav-item"><a class="nav-link" href="favorites.html">Favorites</a></li>
           <li class="nav-item"><a class="nav-link" href="privacy-and-terms.html">Privacy and Terms</a></li>
-          <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
+          <li class="nav-item">
+    <a class="nav-link" href="settings.html">
+        <img
+            src="images/settings-icon.png"
+            alt="Settings"
+            class="settings-icon"
+        >
+    </a>
+</li>
         </ul>
       </div>
     </dialog>
   </div>
   </nav>
 
-  <h1>"Settings</h1>
+
+
+<main class="settings-main">
+
+    <h1 class="settings-title">Settings</h1>
+
+    <!-- For the first rectangle -->
+    <section class="settings-panel">
+
+        <!-- Font Size -->
+        <div class="setting-row">
+
+            <div class="setting-description">
+                <h3>Font Size</h3>
+                <p>This is where you adjust the size of the words in the website.</p>
+            </div>
+
+            <div class="font-size-control">
+                <input
+                    type="range"
+                    id="fontSizeSlider"
+                    min="1"
+                    max="3"
+                    value="2"
+                    step="1"
+                    aria-label="Adjust font size"
+                >
+
+                <div class="slider-labels">
+                    <span>Small</span>
+                    <span>Default</span>
+                    <span>Large</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Font size shortcut -->
+        <div class="setting-row">
+
+            <div class="setting-description">
+                <h3>Font size shortcut</h3>
+                <p>This allows you to change the font size anytime while you browse.</p>
+            </div>
+
+            <div class="shortcut-control">
+
+                <label class="toggle-switch">
+                    <input type="checkbox">
+                    <span class="toggle-slider"></span>
+                </label>
+
+                <span class="toggle-status">It's currently off!</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- The second rectangle -->
+    <section class="media-panel">
+
+        <div class="setting-row">
+
+            <div class="setting-description">
+                <h3>Website Media</h3>
+                <p>This is where you change the media shown in the website. Changing the option may improve loading times.</p>
+            </div>
+
+<div class="media-control">
+    <div class="custom-select">
+
+        <select id="mediaSelect">
+            <option>Allow all media</option>
+            <option>No Videos</option>
+            <option>Only Images</option>
+        </select>
+
+        <img
+            src="images/dropdown-icon.png"
+            alt=""
+            class="dropdown-icon"
+        >
+
+    </div>
+</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+
   <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+
+<script>
+
+<!-- For the sider/toggle -->
+const fontSizeSlider = document.getElementById("fontSizeSlider");
+
+function updateSliderColor() {
+    fontSizeSlider.classList.remove("small", "default", "large");
+
+    if (fontSizeSlider.value === "1") {
+        fontSizeSlider.classList.add("small");
+    } 
+    else if (fontSizeSlider.value === "2") {
+        fontSizeSlider.classList.add("default");
+    } 
+    else {
+        fontSizeSlider.classList.add("large");
+    }
+}
+
+fontSizeSlider.addEventListener("input", updateSliderColor);
+
+updateSliderColor();
+</script>
+
+
 </body>
 </html>
