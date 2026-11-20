@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KalapaTEE</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="body">
+
+    <!-- Navigation -->
+  <nav class="navbar md:navbar-expand nav-bgcolor border-bottom">
+
+    <div class="container body-font">
+
+        <a class="bg navbar-brand" href="home.html">KalapaTEE</a>
+
+        <button class="btn-icon navbar-toggler" type="button"
+            data-bs-toggle="drawer" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+
+        <dialog class="drawer drawer-end" tabindex="-1" id="mainNav" aria-labelledby="mainNavLabel">
+
+      <div class="drawer-header">
+
+        <h5 class="drawer-title" id="mainNavLabel">Menu</h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+
+      </div>
+
+      <div class="drawer-body">
+        <ul class="nav navbar-nav md:ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="favorites.html">Favorites</a></li>
+          <li class="nav-item"><a class="nav-link" href="privacy-and-terms.html">Privacy and Terms</a></li>
+          <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
+        </ul>
+      </div>
+    </dialog>
+  </div>
+  </nav>
+
+    <!-- Hero Section -->
+    <header class=" py-3">
+    
+        <div class="container py-5">
+        <div class="hero-layout section-wrapper">
+
+            <!-- Heading -->
+            <h1 class="hero-heading text-5xl fw-bold header-font">
+            From the Sky, to your Bahay
+            </h1>
+
+            <!-- Image -->
+            <div class="hero-image">
+            <img src="./images/ctabird.png"
+                alt="KalapaTEE holding the shirts of our shop."
+                class="img-fluid rounded">
+            </div>
+
+            <!-- Description -->
+            <p class="hero-description text-m fg-2 body-font">
+            Inspired by the kalapati. Where every style combines with designs that brings comfort and creativity.
+            </p>
+
+            <!-- Button -->
+            <div class="hero-button">
+            <a href="shop.html" class="btn-solid btn-lg body-font button-font">
+                Let's go shopping!
+            </a>
+            </div>
+
+        </div>
+        </div>
+
+    </header>
+
+    <!-- About Us -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="about-layout section-wrapper">
+
+            <!-- First Image -->
+            <div class="about-image1">
+                <img src="./images/Factory.png"
+                    alt="Sewing clothes with care."
+                    class="img-fluid rounded">
+            </div>
+
+            <!-- Heading -->
+            <h2 class="about-heading text-5xl fw-bold header-font">
+                About Us
+            </h2>
+
+            <!-- Second Image -->
+            <div class="about-image2">
+                <img src="./images/ManWearingShirt.png"
+                    alt="Man wearing a KalapaTEE shirt."
+                    class="img-fluid rounded">
+            </div>
+
+            <!-- Description -->
+            <p class="about-description text-m fg-2 body-font">
+                KalapaTEE was created from the playful concept of a kalapati (pigeon) 
+                and the warmth and familiarity of a Filipino home. Inspired by everyday 
+                Filipino experiences, culture, and the realities faced by ordinary Filipinos, 
+                the brand uses creative shirt designs to express identity, freedom, hope, 
+                and social awareness.
+            </p>
+
+            <!-- Button -->
+            <div class="about-button">
+                <a href="about-us.html" class="btn-solid btn-lg body-font button-font">
+                More About Us!
+                </a>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Shopping Catalog Section -->
+        <section id="catalog" class="py-5">
+
+        <div class="container">
+            <div class="catalog-layout section-wrapper">
+
+            <!-- Heading -->
+            <h2 class="catalog-heading text-5xl fw-bold header-font">
+                Explore New Designs
+            </h2>
+
+            <!-- Shop Description -->
+            <p class="catalog-description text-m fg-2 body-font">
+                Fresh drops, best addition to your collection.
+            </p>
+
+            <!-- Product 1: Do Good Work Tee -->
+            <div class="product-card product-1">
+                <img src="./images/DoGoodWorkTee.png"
+                    alt="Man wearing Do Good Work Tee for 499 pesos."
+                    class="img-fluid rounded">
+
+                <div class="product-info">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="fw-bold mb-1 header-font">Do Good Work Tee</h5>
+                    <span class="fw-bold header-font">₱499</span>
+                </div>
+                <p class="mb-0 body-font">
+                    A simple and stylish design inspired by the kalapati.
+                </p>
+                </div>
+            </div>
+
+            <!-- Product 2: Don't Be Late Tee -->
+            <div class="product-card product-2">
+                <img src="./images/DontBeLateTee.png"
+                    alt="Woman wearing Don't Be Late Tee for 499 pesos."
+                    class="img-fluid rounded">
+
+                <div class="product-info">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="fw-bold mb-1 header-font">Don't Be Late Tee</h5>
+                    <span class="fw-bold header-font">₱499</span>
+                </div>
+                <p class="mb-0 body-font">
+                    A comfortable design that feels like home.
+                </p>
+                </div>
+            </div>
+
+            <!-- Product 3: Everyday Comfort Tee -->
+            <div class="product-card product-3">
+                <img src="./images/EverydayComfortTee.png"
+                    alt="Man wearing Everyday Commfort Tee for 499 pesos."
+                    class="img-fluid rounded">
+
+                <div class="product-info">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="fw-bold mb-1 header-font">Everyday Comfort Tee</h5>
+                    <span class="fw-bold header-font">₱499</span>
+                </div>
+                <p class="mb-0 body-font">
+                    Express your creativity with our unique shirt design.
+                </p>
+                </div>
+            </div>
+
+            <!-- Shopping Button -->
+            <div class="catalog-button">
+                <a href="shop.html"
+                class="btn-solid btn-lg body-font button-font">
+                Shop Now!
+                </a>
+            </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Favorites Section -->
+        <section id="catalog" class="py-5">
+
+        <div class="container">
+            <div class="catalog-layout section-wrapper">
+
+            <!-- Heading -->
+            <h2 class="catalog-heading text-5xl fw-bold header-font">
+               Favorites
+            </h2>
+
+            <!-- Shop Description -->
+            <p class="catalog-description text-m fg-2 body-font">
+               Featuring KalapaTee’s comfy shirts that is best paired in different outfits.
+            </p>
+
+            <!-- Product 1: Don't Be Late Tee  -->
+            <div class="product-card product-1">
+                <img src="./images/DontBeLateTee.png"
+                    alt="Woman wearing Don't Be Late Tee for 499 pesos."
+                    class="img-fluid rounded">
+
+                <div class="product-info">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="fw-bold mb-1 header-font">Don't Be Late Tee</h5>
+                    <span class="fw-bold header-font">₱499</span>
+                </div>
+                <p class="mb-0 body-font">
+                    A simple statement for people who believe good work speaks for itself.
+                </p>
+                </div>
+            </div>
+
+            <!-- Product 2: Everyday Comfort Tee -->
+            <div class="product-card product-2">
+                <img src="./images/EverydayComfortTee.png"
+                    alt="Woman wearing Don't Be Late Tee for 499 pesos."
+                    class="img-fluid rounded">
+
+                <div class="product-info">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="fw-bold mb-1 header-font">Everyday Comfort Tee</h5>
+                    <span class="fw-bold header-font">₱499</span>
+                </div>
+                <p class="mb-0 body-font">
+                    A plain, comfortable tee designed for everyday wear.
+                </p>
+                </div>
+            </div>
+
+            <!-- Going Back to Favorites Button -->
+            <div class="catalog-button">
+                <a href="favorites.html"
+                class="btn-solid btn-lg body-font button-font">
+                Go to Favorites!
+                </a>
+            </div>
+
+            </div>
+        </div>
+
+    </section>
+
+ <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container">
+            <div class="footer-content">
+
+            <!-- Logo and Copyright -->
+            <div class="footer-brand">
+
+                <img src="./logo-img/Primary (White).png"
+                    alt="KalapaTEE Logo"
+                    class="footer-logo">
+
+                <p class="footer-copyright  text-s footer-font">
+                All Rights Reserved
+                </p>
+
+            </div>
+
+            <!-- Privacy and Terms Button -->
+            <div class="footer-links">
+                <a href="privacy.html"
+                class="footer-button header-font">
+                Privacy and Terms
+                </a>
+            </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</body>
+</html>
