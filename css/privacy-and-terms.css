@@ -233,19 +233,24 @@ hr {
     text-align: left;
 }
 
-/* ALL PARAGRAPHS */
-.policy-container p:not(.intro) {
-    font-family: 'LibreBaskerville';
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: justify;
-    width: calc(100% - 20px);
-    margin: 0;
-    padding: 0;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Batangas', serif;
 }
 
-
+.policy-intro{
+    width: 75%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+.policy-intro h1 {
+    font-family: 'Batangas';
+    font-size: 64px;
+    text-align: center;
+}
+    
+.policy-intro p {
+    font-family: 'LibreBaskerville', serif;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
