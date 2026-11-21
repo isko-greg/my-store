@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: 'Batangas';
-    src: url('../font/batangas-bold-700.otf');
+    src: url('font/batangas-bold-700.otf');
 }
 
 @font-face {
     font-family: 'LibreBaskerville';
-    src: url('../font/LibreBaskerville-VariableFont_wght.ttf');
+    src: url('font/LibreBaskerville-VariableFont_wght.ttf');
 }
 
 .nav-bgcolor{
