@@ -1,4 +1,3 @@
-
 /* GENERAL */
 * {
     box-sizing: border-box;
@@ -14,6 +13,26 @@
     src: url('../font/LibreBaskerville-VariableFont_wght.ttf');
 }
 
+.nav-bgcolor{
+    background-color:#F4D35E;
+}
+
+.header-font {
+    font-family: 'Batangas';
+    color: #3A3126;
+}
+
+.body-font {
+    font-family:'LibreBaskerville';
+    color: #3A3126;
+    line-height: 2;
+}
+
+.footer-font {
+    font-family:'LibreBaskerville';
+    color: #F9F5F0;
+    line-height: 2;
+}
 
 body {
     margin: 0;
@@ -223,4 +242,3 @@ body {
         gap: 10px;
         flex-wrap: wrap;
     }
-}
