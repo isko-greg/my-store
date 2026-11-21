@@ -207,14 +207,12 @@ body {
     font-size: 16px;
 }
 
-/* RESPONSIVE DESIGN */
 @media screen and (max-width: 700px) {
-
-    .kb-brand-story {
+    .k-brand-story {
         grid-template-columns: 1fr;
     }
 
-    .ks-image {
+    .kb-image {
         height: 200px;
     }
 
@@ -242,3 +240,4 @@ body {
         gap: 10px;
         flex-wrap: wrap;
     }
+}
