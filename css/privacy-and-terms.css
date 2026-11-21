@@ -17,7 +17,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f5f0;
-    font-family: 'Batangas';
+    font-family: 'LibreBaskerville';
     color: #333;
 }
 
@@ -61,10 +61,10 @@ body {
 
 /* MAIN CONTENT */
 .policy-container {
-    width: 95%;
+    width: 100%;
     max-width: 1100px;
     margin: 20px auto 30px;
-    padding: 10px 0;
+    padding: 10px 20px;
 }
 
 /* MAIN TITLE */
@@ -75,15 +75,23 @@ body {
     font-weight: 900;
     margin: 5px 0 15px;
 }
+.policy-container p {
+    font-family: 'LibreBaskerville', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    width: 100%
+    margin: 0 0 15px;
+    padding: 0;
+}
 
 /* INTRO */
 .intro {
-    font-family: 'LibreBaskerville';
-    text-align: left;
+    font-family: 'LibreBaskerville', serif;
     text-align: justify;
     font-size: 16px;
-    line-height: 1.5;
-    max-width: 760px;
+    line-height: 1.6;
+    width: 100%;
     margin: 0 auto 20px;
 }
 
@@ -234,6 +242,10 @@ hr {
     width: calc(100% - 20px);
     margin: 0;
     padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Batangas', serif;
 }
 
 
