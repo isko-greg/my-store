@@ -30,7 +30,7 @@ nav.navbar {
 /* KALAPATEE BRAND */
 nav.navbar .navbar-brand {
     font-family: 'LibreBaskerville', serif !important;
-    font-size: 18px !important;
+    font-size: 16px !important;
     font-weight: normal !important;
     line-height: normal !important;
     color: #292929 !important;
@@ -43,7 +43,7 @@ nav.navbar .navbar-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
 }
 
 nav.navbar .nav-link {
