@@ -28,18 +28,29 @@ nav.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3px 12px;
+    padding: 5px 12px;
     border: 1px solid #d0b16c;
     width: 100%;
 }
 
+/* Navbar brand and links */
 nav.navbar .navbar-brand,
 nav.navbar .nav-link {
     font-family: 'LibreBaskerville';
     font-size: 14px !important;
     font-weight: normal !important;
     color: #292929 !important;
-    padding: 0 10px;
+    text-decoration: none;
+}
+
+/* Link spacing */
+nav.navbar .nav-link {
+    padding: 5px 10px !important;
+    margin: 0 !important;
+}
+
+nav.navbar .navbar-nav {
+    align-items: center;
 }
 .header-font {
     font-family: 'Batangas';
@@ -378,11 +389,6 @@ h5 {
   color: #3A3126;
 }
 
-nav.navbar .container {
-    max-width: 100%;
-    width: 100%;
-}
-
 
 /* MOBILE RESPONSIVENESS */
 
@@ -403,21 +409,4 @@ nav.navbar .container {
   .footer-copyright {
     margin: 8px 0 0;
   }
-}
-/* MATCH ABOUT US NAVBAR */
-nav.navbar .navbar-brand {
-    font-size: 14px !important;
-    padding: 0 20px;
-}
-
-nav.navbar .nav-link {
-    font-size: 14px !important;
-    font-weight: normal !important;
-    color: #292929 !important;
-    padding: 5px 10px !important;
-    margin: 0 !important;
-}
-
-nav.navbar .navbar-nav {
-    align-items: center;
 }
