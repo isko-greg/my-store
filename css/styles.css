@@ -375,6 +375,12 @@ nav.navbar .container {
     width: 100%;
 }
 
+/* MATCH ABOUT US NAVBAR TEXT SIZE */
+nav.navbar .navbar-brand,
+nav.navbar .nav-link {
+    font-size: 16px;
+}
+
 
 /* MOBILE RESPONSIVENESS */
 
