@@ -281,7 +281,6 @@ h5 {
   line-height: 1.4;
 }
 
-
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 767px) {
 
@@ -300,6 +299,7 @@ h5 {
   .product-info p {
     font-size: 0.8rem;
   }
+}
 
 /* FOOTER */
 
