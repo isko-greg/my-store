@@ -12,17 +12,18 @@
     src: url('../font/LibreBaskerville-VariableFont_wght.ttf');
 }
 
+
 /* NAVIGATION BAR */
 .nav-bgcolor {
     background-color: #ecc471;
 }
 
 nav.navbar {
-    background-color: #ecc471;
+    background-color: #ecc471 !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 12px;
+    padding: 5px 12px !important;
     border: 1px solid #d0b16c;
     width: 100%;
 }
@@ -43,18 +44,29 @@ nav.navbar .navbar-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
 }
 
 nav.navbar .nav-link {
     font-family: 'LibreBaskerville', serif !important;
-    font-size: 12px !important;
+    font-size: 10px !important;
     font-weight: bold !important;
     color: #292929 !important;
     text-decoration: none;
     padding: 0 !important;
     margin: 0 !important;
 }
+
+/* SETTINGS */
+nav.navbar .settings {
+    font-size: 15px !important;
+}
+
+/* HOVER */
+nav.navbar .nav-link:hover {
+    text-decoration: underline;
+}
+
 body {
     margin: 0;
     padding: 0;
