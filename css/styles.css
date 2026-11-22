@@ -28,33 +28,32 @@ nav.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 12px;
+    padding: 4px 12px;
     border: 1px solid #d0b16c;
     width: 100%;
 }
 
-/* Navbar brand and links */
-nav.navbar .navbar-brand,
-nav.navbar .nav-link {
+nav.navbar .navbar-brand {
     font-family: 'LibreBaskerville';
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-weight: normal !important;
     color: #292929 !important;
-    text-decoration: none;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-/* Link spacing */
 nav.navbar .nav-link {
+    font-family: 'LibreBaskerville';
+    font-size: 10px !important;
+    font-weight: bold !important;
+    color: #292929 !important;
+    text-decoration: none;
     padding: 5px 10px !important;
     margin: 0 !important;
 }
 
 nav.navbar .navbar-nav {
     align-items: center;
-}
-.header-font {
-    font-family: 'Batangas';
-    color: #3A3126;
 }
 
 .body-font {
