@@ -59,6 +59,21 @@ nav.navbar .nav-link {
 nav.navbar .navbar-nav {
     align-items: center;
 }
+
+/* NAVIGATION LINKS */
+nav.navbar .nav-link {
+    font-family: 'LibreBaskerville';
+    font-size: 15px !important;
+    font-weight: normal !important;
+    color: #292929 !important;
+    text-decoration: none;
+    padding: 5px 10px !important;
+    margin: 0 !important;
+}
+
+nav.navbar .navbar-nav {
+    align-items: center;
+}
 .header-font {
     font-family: 'Batangas';
     color: #3A3126;
