@@ -405,12 +405,3 @@ nav.navbar .container {
   }
 }
 
-/* MATCH ABOUT US NAVBAR */
-nav.navbar .nav-link {
-    font-size: 16px !important;
-    color: #292929;
-}
-
-nav.navbar .navbar-brand {
-    font-size: 16px !important;
-}
