@@ -18,9 +18,12 @@ body {
     src: url('../font/LibreBaskerville-VariableFont_wght.ttf');
 }
 
-
 /* NAVIGATION BAR */
-.navbar {
+.nav-bgcolor {
+    background-color: #ecc471;
+}
+
+nav.navbar {
     background-color: #ecc471;
     display: flex;
     justify-content: space-between;
@@ -30,6 +33,31 @@ body {
     width: 100%;
 }
 
+nav.navbar .navbar-brand {
+    font-family: 'LibreBaskerville';
+    font-size: 16px !important;
+    font-weight: normal !important;
+    color: #292929 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+nav.navbar .nav-link {
+    font-family: 'LibreBaskerville';
+    font-size: 10px !important;
+    font-weight: bold !important;
+    color: #292929 !important;
+    text-decoration: none;
+}
+/* Link spacing */
+nav.navbar .nav-link {
+    padding: 5px 10px !important;
+    margin: 0 !important;
+}
+
+nav.navbar .navbar-nav {
+    align-items: center;
+}
 /* BODY FONT */
 .body-font {
     font-family: 'LibreBaskerville';
