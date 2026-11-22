@@ -33,6 +33,14 @@ nav.navbar {
     width: 100%;
 }
 
+nav.navbar .navbar-brand,
+nav.navbar .nav-link {
+    font-family: 'LibreBaskerville';
+    font-size: 14px !important;
+    font-weight: normal !important;
+    color: #292929 !important;
+    padding: 0 10px;
+}
 .header-font {
     font-family: 'Batangas';
     color: #3A3126;
