@@ -23,17 +23,18 @@ nav.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 12px !important;
+    padding: 8px 50px !important;
     border: 1px solid #d0b16c;
     width: 100%;
+    min-height: 55px;
 }
 
 /* KALAPATEE BRAND */
 nav.navbar .navbar-brand {
     font-family: 'LibreBaskerville', serif !important;
-    font-size: 16px !important;
+    font-size: 18px !important;
     font-weight: normal !important;
-    line-height: normal !important;
+    line-height: 1.5 !important;
     color: #292929 !important;
     padding: 0 !important;
     margin: 0 !important;
@@ -41,30 +42,32 @@ nav.navbar .navbar-brand {
 
 /* NAVIGATION LINKS */
 nav.navbar .navbar-nav {
-    display: flex;
-    flex-direction: row;
+    display: flex !important;
+    flex-direction: row !important;
     align-items: center;
-    gap: 15px;
+    gap: 22px !important;
 }
 
 nav.navbar .nav-link {
     font-family: 'LibreBaskerville', serif !important;
-    font-size: 10px !important;
-    font-weight: bold !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
     color: #292929 !important;
     text-decoration: none;
     padding: 0 !important;
     margin: 0 !important;
-}
-
-/* SETTINGS */
-nav.navbar .settings {
-    font-size: 15px !important;
+    white-space: nowrap;
+    line-height: 1.5 !important;
 }
 
 /* HOVER */
 nav.navbar .nav-link:hover {
     text-decoration: underline;
+}
+
+/* SETTINGS */
+nav.navbar .settings {
+    font-size: 14px !important;
 }
 
 body {
