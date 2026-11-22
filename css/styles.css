@@ -379,44 +379,48 @@ h5 {
   .footer-copyright {
     margin: 8px 0 0;
   }
-    /* NAVBAR - MATCH ABOUT US */
-nav.navbar {
-    background-color: #ecc471 !important;
-    border: 1px solid #d0b16c !important;
-    padding: 5px 12px !important;
-    min-height: auto;
-}
-
-nav.navbar .container {
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
+   /* NAVIGATION - MATCH ABOUT US */
+nav.navbar.nav-bgcolor {
+    background-color: #ecc471;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px 12px;
+    border: 1px solid #d0b16c;
+    width: 100%;
+}
+
+nav.navbar.nav-bgcolor > .container {
+    max-width: none;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 nav.navbar .navbar-brand {
-    color: #292929 !important;
-    font-size: 10px !important;
-    font-weight: bold;
-    margin: 0 !important;
-    padding: 0 !important;
+    font-size: 10px;
+    color: #292929;
+    margin: 0;
+    padding: 0;
 }
 
 nav.navbar .navbar-toggler {
     padding: 4px 8px;
 }
 
+nav.navbar .navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;
+}
+
 nav.navbar .nav-link {
-    color: #292929 !important;
-    font-size: 10px !important;
-    font-weight: bold;
-    padding: 5px 12px !important;
+    font-size: 10px;
+    color: #292929;
+    padding: 5px 12px;
 }
 
 nav.navbar .nav-link:hover {
     text-decoration: underline;
 }
-
-   
