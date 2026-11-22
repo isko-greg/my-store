@@ -2,12 +2,6 @@
 * {
     box-sizing: border-box;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
 @font-face {
     font-family: 'Batangas';
     src: url('../font/batangas-bold-700.otf');
@@ -16,6 +10,10 @@ body {
 @font-face {
     font-family: 'LibreBaskerville';
     src: url('../font/LibreBaskerville-VariableFont_wght.ttf');
+}
+body {
+    margin: 0;
+    padding: 0;
 }
 
 /* NAVIGATION BAR */
@@ -28,7 +26,7 @@ nav.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 12px;
+    padding: 3px 12px;
     border: 1px solid #d0b16c;
     width: 100%;
 }
@@ -44,7 +42,7 @@ nav.navbar .navbar-brand {
 
 nav.navbar .nav-link {
     font-family: 'LibreBaskerville';
-    font-size: 10px !important;
+    font-size: 16px !important;
     font-weight: bold !important;
     color: #292929 !important;
     text-decoration: none;
