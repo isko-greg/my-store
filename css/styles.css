@@ -20,11 +20,7 @@ body {
 
 
 /* NAVIGATION BAR */
-.nav-bgcolor {
-    background-color: #ecc471;
-}
-
-nav.navbar {
+.navbar {
     background-color: #ecc471;
     display: flex;
     justify-content: space-between;
@@ -34,43 +30,12 @@ nav.navbar {
     width: 100%;
 }
 
-nav.navbar .navbar-brand {
-    font-family: 'LibreBaskerville';
-    font-size: 16px !important;
-    font-weight: normal !important;
-    color: #292929 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-nav.navbar .nav-link {
-    font-family: 'LibreBaskerville';
-    font-size: 10px !important;
-    font-weight: bold !important;
-    color: #292929 !important;
-    text-decoration: none;
-}
-
-/* Link spacing */
-nav.navbar .nav-link {
-    padding: 5px 10px !important;
-    margin: 0 !important;
-}
-
-nav.navbar .navbar-nav {
-    align-items: center;
-}
+/* BODY FONT */
 .body-font {
-    font-family:'LibreBaskerville';
+    font-family: 'LibreBaskerville';
     color: #3A3126;
     line-height: 2;
 }
-.body-font {
-    font-family:'LibreBaskerville';
-    color: #3A3126;
-    line-height: 2;
-}
-
 .footer-font {
     font-family:'LibreBaskerville';
     color: #F9F5F0;
