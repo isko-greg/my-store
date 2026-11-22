@@ -357,6 +357,10 @@ h5 {
   color: #3A3126;
 }
 
+nav {
+    background-color: red !important;
+}
+
 /* MOBILE RESPONSIVENESS */
 
 @media (max-width: 576px) {
@@ -378,6 +382,4 @@ h5 {
   }
 }
 
-nav {
-    background-color: red !important;
-}
+
