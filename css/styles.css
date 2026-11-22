@@ -28,7 +28,7 @@ nav.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4px 12px;
+    padding: 5px 12px;
     border: 1px solid #d0b16c;
     width: 100%;
 }
@@ -48,6 +48,10 @@ nav.navbar .nav-link {
     font-weight: bold !important;
     color: #292929 !important;
     text-decoration: none;
+}
+
+/* Link spacing */
+nav.navbar .nav-link {
     padding: 5px 10px !important;
     margin: 0 !important;
 }
