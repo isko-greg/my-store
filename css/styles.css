@@ -370,6 +370,11 @@ h5 {
   color: #3A3126;
 }
 
+nav.navbar .container {
+    max-width: 100%;
+    width: 100%;
+}
+
 
 /* MOBILE RESPONSIVENESS */
 
