@@ -404,4 +404,20 @@ nav.navbar .container {
     margin: 8px 0 0;
   }
 }
+/* MATCH ABOUT US NAVBAR */
+nav.navbar .navbar-brand {
+    font-size: 14px !important;
+    padding: 0 20px;
+}
 
+nav.navbar .nav-link {
+    font-size: 14px !important;
+    font-weight: normal !important;
+    color: #292929 !important;
+    padding: 5px 10px !important;
+    margin: 0 !important;
+}
+
+nav.navbar .navbar-nav {
+    align-items: center;
+}
