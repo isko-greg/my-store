@@ -44,9 +44,9 @@ nav.navbar .container {
 
 /* KALAPATEE BRAND */
 nav.navbar .navbar-brand {
-    font-family: 'Batangas';
-    font-size: 10px !important;
-    font-weight: bold !important;
+    font-family: 'LibreBaskerville';
+    font-size: 16px !important;
+    font-weight: normal !important;
     color: #292929 !important;
     margin: 0 !important;
     padding: 0 !important;
