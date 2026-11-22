@@ -379,4 +379,49 @@ h5 {
   .footer-copyright {
     margin: 8px 0 0;
   }
+    /* NAVIGATION - MATCH ABOUT US */
+nav.navbar {
+    background-color: #ecc471 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 12px !important;
+    border: 1px solid #d0b16c !important;
+    width: 100%;
+}
+
+nav.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.navbar .navbar-brand {
+    color: #292929 !important;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+nav.navbar .navbar-toggler {
+    margin: 0;
+}
+
+nav.navbar .navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+nav.navbar .nav-link {
+    color: #292929 !important;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav.navbar .nav-link:hover {
+    text-decoration: underline;
+}
 
