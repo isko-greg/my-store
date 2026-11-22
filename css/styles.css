@@ -1,3 +1,13 @@
+/* GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: 'Batangas';
     src: url('../font/batangas-bold-700.otf');
