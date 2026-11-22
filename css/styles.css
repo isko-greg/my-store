@@ -28,34 +28,46 @@ nav.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4px 12px;
+    padding: 5px 12px;
     border: 1px solid #d0b16c;
     width: 100%;
 }
 
+/* NAVBAR CONTAINER */
+nav.navbar .container {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* KALAPATEE BRAND */
 nav.navbar .navbar-brand {
-    font-family: 'LibreBaskerville';
-    font-size: 16px !important;
-    font-weight: normal !important;
+    font-family: 'Batangas';
+    font-size: 10px !important;
+    font-weight: bold !important;
     color: #292929 !important;
     margin: 0 !important;
     padding: 0 !important;
 }
 
+/* NAVIGATION LINKS */
+nav.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 nav.navbar .nav-link {
-    font-family: 'LibreBaskerville';
+    font-family: 'Batangas';
     font-size: 10px !important;
     font-weight: bold !important;
     color: #292929 !important;
     text-decoration: none;
-    padding: 5px 10px !important;
+    padding: 0 !important;
     margin: 0 !important;
 }
-
-nav.navbar .navbar-nav {
-    align-items: center;
-}
-
 .body-font {
     font-family:'LibreBaskerville';
     color: #3A3126;
