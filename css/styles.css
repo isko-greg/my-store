@@ -33,12 +33,19 @@ nav.navbar {
     width: 100%;
 }
 
-/* Navbar brand and links */
-nav.navbar .navbar-brand,
+nav.navbar .navbar-brand {
+    font-family: 'LibreBaskerville';
+    font-size: 16px !important;
+    font-weight: normal !important;
+    color: #292929 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 nav.navbar .nav-link {
     font-family: 'LibreBaskerville';
-    font-size: 14px !important;
-    font-weight: normal !important;
+    font-size: 10px !important;
+    font-weight: bold !important;
     color: #292929 !important;
     text-decoration: none;
 }
