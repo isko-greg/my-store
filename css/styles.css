@@ -379,18 +379,18 @@ h5 {
   .footer-copyright {
     margin: 8px 0 0;
   }
-    /* NAVIGATION - MATCH ABOUT US */
+    /* NAVBAR - MATCH ABOUT US */
 nav.navbar {
     background-color: #ecc471 !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 12px !important;
     border: 1px solid #d0b16c !important;
-    width: 100%;
+    padding: 5px 12px !important;
+    min-height: auto;
 }
 
 nav.navbar .container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -398,30 +398,25 @@ nav.navbar .container {
 
 nav.navbar .navbar-brand {
     color: #292929 !important;
-    text-decoration: none;
-    font-size: 16px;
+    font-size: 10px !important;
     font-weight: bold;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 nav.navbar .navbar-toggler {
-    margin: 0;
-}
-
-nav.navbar .navbar-toggler-icon {
-    width: 1.2em;
-    height: 1.2em;
+    padding: 4px 8px;
 }
 
 nav.navbar .nav-link {
     color: #292929 !important;
-    font-size: 10px;
+    font-size: 10px !important;
     font-weight: bold;
-    text-decoration: none;
+    padding: 5px 12px !important;
 }
 
 nav.navbar .nav-link:hover {
     text-decoration: underline;
 }
 
+   
