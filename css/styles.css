@@ -13,9 +13,8 @@
     background-color: #ecc471;
 }
 
-.navbar {
+nav.navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 5px 12px;
     border: 1px solid #d0b16c;
@@ -301,53 +300,6 @@ h5 {
   .product-info p {
     font-size: 0.8rem;
   }
-
-}
-/* NAVIGATION - MATCH ABOUT US */
-nav.navbar.nav-bgcolor {
-    background-color: #ecc471;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 12px;
-    border: 1px solid #d0b16c;
-    width: 100%;
-}
-
-nav.navbar.nav-bgcolor > .container {
-    max-width: none;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-nav.navbar .navbar-brand {
-    font-size: 10px;
-    color: #292929;
-    margin: 0;
-    padding: 0;
-}
-
-nav.navbar .navbar-toggler {
-    padding: 4px 8px;
-}
-
-nav.navbar .navbar-toggler-icon {
-    width: 1.2em;
-    height: 1.2em;
-}
-
-nav.navbar .nav-link {
-    font-size: 10px;
-    color: #292929;
-    padding: 5px 12px;
-}
-
-nav.navbar .nav-link:hover {
-    text-decoration: underline;
-}
 
 /* FOOTER */
 
