@@ -1,3 +1,8 @@
+
+/* GENERAL */
+* {
+    box-sizing: border-box;
+}
 @font-face {
     font-family: 'Batangas';
     src: url('../font/batangas-bold-700.otf');
@@ -8,12 +13,27 @@
     src: url('../font/LibreBaskerville-VariableFont_wght.ttf');
 }
 
+/* NAVIGATION BAR */
+.nav-bgcolor {
+    background-color: #ecc471;
+}
+
+nav.navbar {
+    background-color: #ecc471;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 12px;
+    border: 1px solid #d0b16c;
+    width: 100%;
+}
 
 /* KALAPATEE BRAND */
 nav.navbar .navbar-brand {
-    font-family: 'Batangas', serif !important;
-    font-size: 18px !important;
+    font-family: 'LibreBaskerville', serif !important;
+    font-size: 16px !important;
     font-weight: normal !important;
+    line-height: normal !important;
     color: #292929 !important;
     padding: 0 !important;
     margin: 0 !important;
@@ -21,31 +41,32 @@ nav.navbar .navbar-brand {
 
 /* NAVIGATION LINKS */
 nav.navbar .navbar-nav {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 22px !important;
-    margin-left: auto !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
 }
 
 nav.navbar .nav-link {
-    font-family: 'Batangas', serif !important;
-    font-size: 14px !important;
-    font-weight: normal !important;
+    font-family: 'LibreBaskerville', serif !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
     color: #292929 !important;
+    text-decoration: none;
     padding: 0 !important;
     margin: 0 !important;
-    white-space: nowrap;
-    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
 }
 
-
+/* BODY FONT */
 .body-font {
-    font-family:'LibreBaskerville';
+    font-family: 'LibreBaskerville';
     color: #3A3126;
     line-height: 2;
 }
-
 .footer-font {
     font-family:'LibreBaskerville';
     color: #F9F5F0;
@@ -296,7 +317,6 @@ h5 {
   line-height: 1.4;
 }
 
-
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 767px) {
 
@@ -315,7 +335,6 @@ h5 {
   .product-info p {
     font-size: 0.8rem;
   }
-
 }
 
 /* FOOTER */
@@ -374,6 +393,7 @@ h5 {
   color: #3A3126;
 }
 
+
 /* MOBILE RESPONSIVENESS */
 
 @media (max-width: 576px) {
@@ -393,5 +413,4 @@ h5 {
   .footer-copyright {
     margin: 8px 0 0;
   }
-
 }
