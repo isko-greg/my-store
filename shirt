@@ -1,0 +1,295 @@
+
+<!-- PRODUCT POPUP -->
+<div id="productModal" class="product-modal">
+  <div class="product-popup">
+
+    <!-- Close Button -->
+    <button class="close-popup" onclick="closeProductModal()">
+      &times;
+    </button>
+
+    <!-- Product Image -->
+    <div class="product-image">
+      <img src="dont-be-late-tee.png" alt="Don't Be Late Tee">
+    </div>
+
+    <!-- Product Information -->
+    <div class="product-info">
+
+      <h2>Don't Be Late Tee</h2>
+
+      <p class="description">
+        A simple reminder to show up, get moving,
+        and make the most of the day.
+      </p>
+
+      <h3 class="price">₱ 499</h3>
+
+      <div class="rating">
+        <strong>Fellow KalopaTEEs rated this as:</strong>
+        <span>☕ ☕ ☕ ☕ ☕</span>
+        <b>4.5</b>
+      </div>
+
+      <!-- Size Selection -->
+      <label>SIZE:</label>
+      <div class="sizes">
+        <button onclick="selectSize(this)">XS</button>
+        <button onclick="selectSize(this)">S</button>
+        <button onclick="selectSize(this)">M</button>
+        <button onclick="selectSize(this)">L</button>
+        <button onclick="selectSize(this)">XL</button>
+      </div>
+
+      <!-- Quantity -->
+      <label>QUANTITY:</label>
+      <div class="quantity">
+        <button onclick="changeQuantity(-1)">−</button>
+        <span id="quantity">1</span>
+        <button onclick="changeQuantity(1)">+</button>
+      </div>
+
+      <!-- Order Button -->
+      <button class="order-btn" onclick="orderProduct()">
+        ORDER NOW
+      </button>
+
+    </div>
+  </div>
+</div>
+
+<style>
+/* MODAL BACKGROUND */
+.product-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+/* POPUP CONTAINER */
+.product-popup {
+  position: relative;
+  background: #f8f5ee;
+  width: 100%;
+  max-width: 750px;
+  display: flex;
+  gap: 25px;
+  padding: 30px;
+  border-radius: 12px;
+  border: 3px solid #e3c27a;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+}
+
+/* CLOSE BUTTON */
+.close-popup {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  border: none;
+  background: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* IMAGE */
+.product-image {
+  flex: 1;
+  min-width: 0;
+  border: 5px solid #dfc27b;
+  border-radius: 12px;
+  padding: 3px;
+  height: 300px;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* PRODUCT DETAILS */
+.product-info {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #333;
+}
+
+.product-info h2 {
+  font-size: 25px;
+  margin: 0 0 5px;
+}
+
+.description {
+  font-size: 13px;
+  margin: 0 0 10px;
+}
+
+.price {
+  font-size: 20px;
+  margin: 5px 0 12px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.rating span {
+  color: #8c7546;
+}
+
+.product-info label {
+  font-size: 11px;
+  font-weight: bold;
+  margin: 8px 0 5px;
+}
+
+/* SIZE BUTTONS */
+.sizes {
+  display: flex;
+  gap: 5px;
+}
+
+.sizes button {
+  flex: 1;
+  padding: 9px 3px;
+  background: #c8a779;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.sizes button.active {
+  background: #303030;
+  color: white;
+}
+
+/* QUANTITY */
+.quantity {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  background: #e4c47b;
+  border-radius: 20px;
+  justify-content: space-between;
+  padding: 3px 8px;
+}
+
+.quantity button {
+  border: none;
+  background: transparent;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.quantity span {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* ORDER BUTTON */
+.order-btn {
+  margin-top: 15px;
+  width: 100%;
+  background: #a6c77e;
+  border: 1px solid #779b54;
+  border-radius: 3px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.order-btn:hover {
+  background: #91b968;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+  .product-popup {
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px 18px;
+    max-width: 380px;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .product-image {
+    height: 220px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .product-info h2 {
+    font-size: 21px;
+  }
+}
+</style>
+
+<script>
+// OPEN POPUP
+function openProductModal() {
+  document.getElementById("productModal").style.display = "flex";
+}
+
+// CLOSE POPUP
+function closeProductModal() {
+  document.getElementById("productModal").style.display = "none";
+}
+
+// SIZE SELECTION
+function selectSize(button) {
+  document.querySelectorAll(".sizes button").forEach(btn => {
+    btn.classList.remove("active");
+  });
+
+  button.classList.add("active");
+}
+
+// QUANTITY
+let quantity = 1;
+
+function changeQuantity(amount) {
+  quantity = Math.max(1, quantity + amount);
+  document.getElementById("quantity").textContent = quantity;
+}
+
+// ORDER BUTTON
+function orderProduct() {
+  const selectedSize = document.querySelector(".sizes button.active");
+
+  if (!selectedSize) {
+    alert("Please select a shirt size first!");
+    return;
+  }
+
+  alert(
+    "Product: Don't Be Late Tee\n" +
+    "Size: " + selectedSize.textContent + "\n" +
+    "Quantity: " + quantity + "\n" +
+    "Total: ₱" + (499 * quantity)
+  );
+}
+
+// CLOSE WHEN CLICKING OUTSIDE
+document.getElementById("productModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeProductModal();
+  }
+});
+</script>
