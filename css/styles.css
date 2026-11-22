@@ -11,10 +11,6 @@
     font-family: 'LibreBaskerville';
     src: url('../font/LibreBaskerville-VariableFont_wght.ttf');
 }
-body {
-    margin: 0;
-    padding: 0;
-}
 
 /* NAVIGATION BAR */
 .nav-bgcolor {
@@ -26,36 +22,44 @@ nav.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3px 12px;
+    padding: 5px 12px;
     border: 1px solid #d0b16c;
     width: 100%;
 }
 
+/* KALAPATEE BRAND */
 nav.navbar .navbar-brand {
-    font-family: 'LibreBaskerville';
-    font-size: 16px !important;
+    font-family: 'LibreBaskerville', serif !important;
+    font-size: 18px !important;
     font-weight: normal !important;
+    line-height: normal !important;
     color: #292929 !important;
-    margin: 0 !important;
     padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* NAVIGATION LINKS */
+nav.navbar .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
 }
 
 nav.navbar .nav-link {
-    font-family: 'LibreBaskerville';
-    font-size: 16px !important;
+    font-family: 'LibreBaskerville', serif !important;
+    font-size: 12px !important;
     font-weight: bold !important;
     color: #292929 !important;
     text-decoration: none;
-}
-/* Link spacing */
-nav.navbar .nav-link {
-    padding: 5px 10px !important;
+    padding: 0 !important;
     margin: 0 !important;
 }
-
-nav.navbar .navbar-nav {
-    align-items: center;
+body {
+    margin: 0;
+    padding: 0;
 }
+
 /* BODY FONT */
 .body-font {
     font-family: 'LibreBaskerville';
