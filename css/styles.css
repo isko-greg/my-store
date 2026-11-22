@@ -377,4 +377,7 @@ h5 {
     margin: 8px 0 0;
   }
 }
-  
+
+nav {
+    background-color: red !important;
+}
