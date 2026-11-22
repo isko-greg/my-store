@@ -1,7 +1,3 @@
-/* GENERAL */
-* {
-    box-sizing: border-box;
-}
 @font-face {
     font-family: 'Batangas';
     src: url('../font/batangas-bold-700.otf');
@@ -12,75 +8,30 @@
     src: url('../font/LibreBaskerville-VariableFont_wght.ttf');
 }
 
-
 /* NAVIGATION BAR */
 .nav-bgcolor {
     background-color: #ecc471;
 }
 
-nav.navbar {
-    background-color: #ecc471 !important;
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 50px !important;
+    padding: 5px 12px;
     border: 1px solid #d0b16c;
     width: 100%;
-    min-height: 55px;
+}
+.header-font {
+    font-family: 'Batangas';
+    color: #3A3126;
 }
 
-/* KALAPATEE BRAND */
-nav.navbar .navbar-brand {
-    font-family: 'LibreBaskerville', serif !important;
-    font-size: 18px !important;
-    font-weight: normal !important;
-    line-height: 1.5 !important;
-    color: #292929 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-/* NAVIGATION LINKS */
-nav.navbar .navbar-nav {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center;
-    gap: 22px !important;
-}
-
-nav.navbar .nav-link {
-    font-family: 'LibreBaskerville', serif !important;
-    font-size: 14px !important;
-    font-weight: normal !important;
-    color: #292929 !important;
-    text-decoration: none;
-    padding: 0 !important;
-    margin: 0 !important;
-    white-space: nowrap;
-    line-height: 1.5 !important;
-}
-
-/* HOVER */
-nav.navbar .nav-link:hover {
-    text-decoration: underline;
-}
-
-/* SETTINGS */
-nav.navbar .settings {
-    font-size: 14px !important;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-/* BODY FONT */
 .body-font {
-    font-family: 'LibreBaskerville';
+    font-family:'LibreBaskerville';
     color: #3A3126;
     line-height: 2;
 }
+
 .footer-font {
     font-family:'LibreBaskerville';
     color: #F9F5F0;
@@ -331,6 +282,7 @@ h5 {
   line-height: 1.4;
 }
 
+
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 767px) {
 
@@ -349,6 +301,7 @@ h5 {
   .product-info p {
     font-size: 0.8rem;
   }
+
 }
 
 /* FOOTER */
@@ -407,7 +360,6 @@ h5 {
   color: #3A3126;
 }
 
-
 /* MOBILE RESPONSIVENESS */
 
 @media (max-width: 576px) {
@@ -427,5 +379,44 @@ h5 {
   .footer-copyright {
     margin: 8px 0 0;
   }
+    /* NAVBAR - MATCH ABOUT US */
+nav.navbar {
+    background-color: #ecc471 !important;
+    border: 1px solid #d0b16c !important;
+    padding: 5px 12px !important;
+    min-height: auto;
 }
 
+nav.navbar .container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.navbar .navbar-brand {
+    color: #292929 !important;
+    font-size: 10px !important;
+    font-weight: bold;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+nav.navbar .navbar-toggler {
+    padding: 4px 8px;
+}
+
+nav.navbar .nav-link {
+    color: #292929 !important;
+    font-size: 10px !important;
+    font-weight: bold;
+    padding: 5px 12px !important;
+}
+
+nav.navbar .nav-link:hover {
+    text-decoration: underline;
+}
+
+   
