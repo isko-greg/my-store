@@ -8,14 +8,37 @@
     src: url('../font/LibreBaskerville-VariableFont_wght.ttf');
 }
 
-.nav-bgcolor{
-    background-color:#F4D35E;
+
+/* KALAPATEE BRAND */
+nav.navbar .navbar-brand {
+    font-family: 'Batangas', serif !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    color: #292929 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
-.header-font {
-    font-family: 'Batangas';
-    color: #3A3126;
+/* NAVIGATION LINKS */
+nav.navbar .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 22px !important;
+    margin-left: auto !important;
 }
+
+nav.navbar .nav-link {
+    font-family: 'Batangas', serif !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    color: #292929 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
 
 .body-font {
     font-family:'LibreBaskerville';
